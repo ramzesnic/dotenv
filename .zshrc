@@ -1,1 +1,1 @@
-/home/roman/.zshrc
+../.zshrc
