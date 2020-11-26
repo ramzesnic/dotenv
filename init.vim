@@ -228,3 +228,8 @@ command! -nargs=0 T :belowright split | terminal
 " Find in project directory
 let g:ag_working_path_mode="r"
 set modifiable
+
+" Yank & paste vbuf
+vmap <leader>y :w! /tmp/.vim/.vbuf<CR>
+nmap <leader>y :.w! /tmp/.vim/.vbuf<CR>
+nmap <leader>p :r /tmp/.vim/.vbuf<CR>
