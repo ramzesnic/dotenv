@@ -14,6 +14,10 @@ Plug 'christoomey/vim-tmux-navigator'
 Plug 'Numkil/ag.nvim'
 Plug 'morhetz/gruvbox'
 Plug 'HerringtonDarkholme/yats.vim' " TS Syntax
+Plug 'autozimu/LanguageClient-neovim', {
+    \ 'branch': 'next',
+    \ 'do': './install.sh'
+    \ }
 
 " Initialize plugin system
 call plug#end()
@@ -43,6 +47,7 @@ let g:NERDTreeGitStatusIndicatorMapCustom = {
                 \ }
 
 let g:NERDTreeIgnore = ['^node_modules$']
+:let g:NERDTreeWinSize=45
 
 command! -nargs=0 Prettier :CocCommand prettier.formatFile
 
@@ -230,6 +235,6 @@ let g:ag_working_path_mode="r"
 set modifiable
 
 " Yank & paste vbuf
-vmap <leader>y :w! /tmp/.vim/.vbuf<CR>
-nmap <leader>y :.w! /tmp/.vim/.vbuf<CR>
-nmap <leader>p :r /tmp/.vim/.vbuf<CR>
+vmap <leader>y :w! /$HOME/.vim/.vbuf<CR>
+nmap <leader>y :.w! /$HOME/.vim/.vbuf<CR>
+nmap <leader>p :r /$HOME/.vim/.vbuf<CR>
