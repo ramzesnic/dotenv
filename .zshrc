@@ -104,5 +104,7 @@ alias mutt="neomutt"
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 source /home/roman/.zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /etc/profile.d/maven.sh
+source /etc/profile.d/gradle.sh
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=6'
 [ -f "/home/roman/.ghcup/env" ] && source "/home/roman/.ghcup/env" # ghcup-env

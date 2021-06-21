@@ -9,24 +9,9 @@
     "javascriptreact",
     "typescript.tsx",
     "graphql",
-    "hs",
-    "lhs",
-    "haskell"
+    "java"
   ],
-  "languageserver": {
-    "haskell": {
-      "command": "haskell-language-server-wrapper",
-      "args": ["--lsp"],
-      "rootPatterns": [
-        "*.cabal",
-        "stack.yaml",
-        "cabal.project",
-        "package.yaml"
-      ],
-      "filetypes": ["hs", "lhs", "haskell"],
-      "initializationOptions": {
-        "haskell": {}
-      }
-    }
-  }
+  "codeLens.enable": true,
+  "java.referencesCodeLens.enabled": true,
+  "java.jdt.ls.vmargs": "-javaagent:/usr/local/share/lombok/lombok.jar"
 }
