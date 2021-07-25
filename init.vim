@@ -18,6 +18,8 @@ Plug 'autozimu/LanguageClient-neovim', {
     \ 'branch': 'next',
     \ 'do': './install.sh'
     \ }
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 
 " Initialize plugin system
 call plug#end()
