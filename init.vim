@@ -155,6 +155,7 @@ function! s:show_documentation()
     execute 'h '.expand('<cword>')
   else
     call CocAction('doHover')
+    call coc#float#jump()
   endif
 endfunction
 
