@@ -64,7 +64,7 @@ set relativenumber
 set smarttab
 set cindent
 set tabstop=2
-set shiftwidth=2
+set shiftwidth=4
 " always uses spaces instead of tab characters
 set expandtab
 " Ignore register
@@ -155,6 +155,7 @@ function! s:show_documentation()
     execute 'h '.expand('<cword>')
   else
     call CocAction('doHover')
+    call coc#float#jump()
   endif
 endfunction
 
